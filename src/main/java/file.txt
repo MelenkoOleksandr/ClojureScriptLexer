@@ -1,0 +1,10 @@
+(conj ["a" "b" "c"] "d")
+(conj {:firstname "John" :lastname "Doe"} {:age 25 :nationality "Chinese"})
+(clojure.set/union #{1 2} #{3})
+(let [a [{:a "hi"} {:b "hey"}] ;; This is comment
+      b [{:c "yo"} {:d "hiya"}]
+      c [{:e "bonjour"}]]
+  ((comp vec flatten conj) a b c))
+  (def stack '(2 1 0))
+  (neg? -1)
+  (map-indexed (fn [idx itm] [idx itm]) "foobar")
